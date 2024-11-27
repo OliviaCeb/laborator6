@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Top 5 Cărți despre Dezvoltare Personală</title>
+    <link rel="shortcut icon" href="Imagini/ico.png" />
+    <style>
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background-color: #a20b0b;
+    color: #fff;
+    text-align: center;
+    padding: 50px 20px;
+    animation: fadeIn 2s ease-in;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 18px;
+    margin-top: 0;
+}
+
+/* Book Section */
+.books {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.book-card {
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    transform: scale(1);
+    transition: transform 0.3s ease-in-out;
+    animation: slideIn 1s ease-in-out;
+}
+
+.book-card:hover {
+    transform: scale(1.05);
+}
+
+.book-img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.book-info {
+    padding: 20px;
+}
+
+.book-info h3 {
+    font-size: 20px;
+    margin: 0;
+    color: #040529;
+}
+
+.book-info p {
+    font-size: 16px;
+    color: #7f8c8d;
+}
+
+.cta-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #e74c3c;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #c0392b;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(100px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .books {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .books {
+        grid-template-columns: 1fr;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>Top 5 Cărți despre Dezvoltare Personală</h1>
+            <p>Descoperă cărțile care te vor ajuta să îți îmbunătățești viața și să îți atingi obiectivele!</p>
+        </div>
+    </header>
+
+    <section class="books">
+        <div class="book-card" id="book1">
+            <img src="Imagini/carte1.png" alt="Carte 1" class="book-img">
+            <div class="book-info">
+                <h3>Cartea 1 - "Controleaza-ti timpul ca sa-ti controlezi viata" - Brian Tracy</h3>
+                <p>Oferă strategii clare pentru a-ți organiza viața și a atinge succesul personal și profesional.</p>
+                <a href="https://www.elefant.md/controleaza-ti-timpul-ca-sa-ti-controlezi-viata_d3d17c13-8543-4b2d-ac46-b52cd0d54296" class="cta-button" target="_blank">Cumpără acum</a>
+            </div>
+        </div>
+
+        <div class="book-card" id="book2">
+            <img src="Imagini/carte2.png" alt="Carte 2" class="book-img">
+            <div class="book-info">
+                <h3>Cartea 2 - "Puterea prezentului" - Eckhart Tolle</h3>
+                <p>Învață cum să trăiești în prezent pentru a reduce stresul și a-ți găsi echilibrul interior.</p>
+                <a href="https://carturesti.md/carte/puterea-prezentului-12137" class="cta-button" target="_blank">Cumpără acum</a>
+            </div>
+        </div>
+
+        <div class="book-card" id="book3">
+            <img src="Imagini/carte3.png" alt="Carte 3" class="book-img">
+            <div class="book-info">
+                <h3>Cartea 3 - "Gândire rapidă, gândire lentă" - Daniel Kahneman</h3>
+                <p>Explorarea modurilor în care gândirea rapidă și lentă ne influențează deciziile și comportamentele.</p>
+                <a href="https://carturesti.md/carte/gandire-rapida-gandire-lenta-77551" class="cta-button" target="_blank">Cumpără acum</a>
+            </div>
+        </div>
+
+        <div class="book-card" id="book4">
+            <img src="Imagini/carte4.png" alt="Carte 4" class="book-img">
+            <div class="book-info">
+                <h3>Cartea 4 - "Secretele succesului" - Dale Carnegie</h3>
+                <p>Un ghid despre cum să înfrunți provocările vieții și să transformi eșecurile în lecții prețioase.</p>
+                <a href="https://carturesti.md/carte/secretele-succesului-29405" class="cta-button" target="_blank">Cumpără acum</a>
+            </div>
+        </div>
+
+        <div class="book-card" id="book5">
+            <img src="Imagini/cartea5.webp" alt="Carte 5" class="book-img">
+            <div class="book-info">
+                <h3>Cartea 5 - "Inteligența emoțională" - Daniel Goleman</h3>
+                <p>Importanța înțelegerii și gestionării emoțiilor pentru succesul personal și profesional.</p>
+                <a href="https://www.elefant.md/inteligenta-emotionala-editia-a-iv-a_46dfb5a6-e761-4de6-8857-657586bd75c5" class="cta-button" target="_blank">Cumpără acum</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Web Design Company. Toate drepturile rezervate.</p>
+    </footer>
+
+</body>
+</html>
